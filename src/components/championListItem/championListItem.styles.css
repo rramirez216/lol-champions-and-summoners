@@ -1,0 +1,39 @@
+.list-item-wrapper:hover a {
+  transform: translateY(-10px);
+}
+
+.list-item-wrapper .image-wrapper {
+  display: inline-block;
+}
+
+.image-wrapper {
+  transition: transform 250ms;
+  line-height: 0;
+}
+
+.list-item-wrapper .champion-name-wrapper {
+  margin: 8px 0 24px;
+}
+
+.champion-name {
+  width: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  border-bottom: 2px solid var(--color-secondary);
+  margin-bottom: -8px;
+  transition: transform 250ms, width 250ms;
+  transition-timing-function: ease-out;
+}
+
+.list-item-wrapper:hover .line {
+  transform: scaleX(1.09);
+  width: 100%;
+}

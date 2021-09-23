@@ -1,38 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary: hsl(195, 70%, 22%);
+  --color-secondary: hsl(42, 58%, 89%);
+  --color-accent1: hsl(162, 70%, 34%);
+  --color-accent2: hsl(133, 47%, 68%);
+  --color-accent3: hsl(104, 27%, 80%);
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: var(--color-secondary);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* global styles */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-column {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

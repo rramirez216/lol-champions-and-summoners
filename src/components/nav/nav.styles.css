@@ -1,0 +1,22 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.navigation a {
+  display: block;
+  color: var(--color-secondary);
+  padding: 8px;
+}
+
+.navigation a:link {
+  text-decoration: none;
+}
+
+.navigation a:hover .line {
+  transform: scaleX(1.09);
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+.champion-list-outer-wrapper {
+  width: 100%;
+  padding: 20px;
+  min-height: 100%;
+  background-color: var(--color-primary);
+}
+
+.list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.champion-filter {
+  background-color: var(--color-accent3);
+  color: var(--color-primary);
+  width: 250px;
+  font: 500 1.1rem 'Roboto Mono';
+  border: 3px solid var(--color-accent2);
+  border-radius: 5px 5px 5px 5px;
+  border-style: none;
+  margin-bottom: 40px;
+}
