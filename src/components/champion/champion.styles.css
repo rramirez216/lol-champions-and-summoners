@@ -1,0 +1,198 @@
+.champion-card {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.champion-card h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.champion-card h1,
+h2 {
+  margin-bottom: 24px;
+}
+
+.champion-image-wrapper {
+  width: 100%;
+}
+
+.champion-image-wrapper img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.lore {
+  margin-bottom: 32px;
+}
+
+.spells-list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+}
+
+.spell {
+  position: relative;
+}
+
+.tooltip-text {
+  background-color: var(--color-accent3);
+  color: var(--color-primary);
+  display: none;
+  width: 250px;
+  position: absolute;
+  bottom: 110%;
+  left: -145%;
+  z-index: 1;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.passive {
+  position: absolute;
+  bottom: 110%;
+  left: 5%;
+}
+
+.e-spell {
+  position: absolute;
+  bottom: 110%;
+  left: 5%;
+}
+
+.w-spell {
+  position: absolute;
+  bottom: 110%;
+  left: -200%;
+}
+
+.right {
+  position: absolute;
+  bottom: 110%;
+  left: -40%;
+}
+
+.spell .tooltip-text::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-accent2) transparent transparent transparent;
+}
+
+.spell .passive::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 12%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-accent2) transparent transparent transparent;
+}
+
+.spell .e-spell::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-accent2) transparent transparent transparent;
+}
+
+.spell .w-spell::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 65%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-accent2) transparent transparent transparent;
+}
+
+.spell .right::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--color-accent2) transparent transparent transparent;
+}
+
+.spell:hover .tooltip-text {
+  display: block;
+}
+
+.tooltip-text h3,
+p {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 24.1875rem) {
+  .w-spell {
+    position: absolute;
+    bottom: 110%;
+    left: -145%;
+  }
+
+  .spell .w-spell::after {
+    left: 50%;
+  }
+
+  .e-spell {
+    position: absolute;
+    bottom: 110%;
+    left: -270%;
+  }
+
+  .spell .e-spell::after {
+    left: 82%;
+  }
+}
+
+@media (min-width: 29.6875rem) {
+  /* Tablets */
+  .e-spell {
+    position: absolute;
+    bottom: 110%;
+    left: -145%;
+  }
+
+  .spell .e-spell::after {
+    left: 50%;
+  }
+
+  .right {
+    position: absolute;
+    bottom: 110%;
+    left: -270%;
+  }
+
+  .spell .right::after {
+    left: 82%;
+  }
+}
+
+@media (min-width: 34.375rem) {
+}
+
+@media (min-width: 68.75rem) {
+  /* Laptop */
+}
+@media (min-width: 1500px) {
+  /* Desktop */
+}

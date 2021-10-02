@@ -29,7 +29,7 @@ body,
   --color-secondary: hsl(42, 58%, 89%);
   --color-accent1: hsl(162, 70%, 34%);
   --color-accent2: hsl(133, 47%, 68%);
-  --color-accent3: hsl(104, 27%, 80%);
+  --color-accent3: hsl(133, 79%, 88%);
 }
 
 .App {
@@ -38,10 +38,17 @@ body,
   color: var(--color-secondary);
 }
 
-/* global styles */
+/* reusable styles */
 
 .flex-column {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+
+.outer-wrapper {
+  width: 100%;
+  padding: 20px;
+  min-height: 100%;
+  background-color: var(--color-primary);
 }

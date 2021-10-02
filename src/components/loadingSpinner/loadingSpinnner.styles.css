@@ -1,0 +1,74 @@
+.spinner {
+  font-size: 3rem;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.no-delay {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+}
+
+.delay {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 200ms;
+}
+
+.three {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 400ms;
+}
+
+.four {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 600ms;
+}
+
+.five {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 800ms;
+}
+
+.six {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 1000ms;
+}
+
+.seven {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 1200ms;
+}
+
+.eight {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 1400ms;
+}
+
+.nine {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 1600ms;
+}
+
+.ten {
+  display: inline-block;
+  animation: up-down 1000ms ease-out infinite;
+  animation-delay: 1800ms;
+}
