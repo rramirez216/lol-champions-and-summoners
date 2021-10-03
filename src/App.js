@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import axios from 'axios';
 import './App.css';
@@ -18,14 +18,14 @@ const App = () => {
 
       setIsLoading(true)
 
-      const result = await axios('http://ddragon.leagueoflegends.com/cdn/11.18.1/data/en_US/champion.json')
+      const result = await axios('https://ddragon.leagueoflegends.com/cdn/11.18.1/data/en_US/champion.json')
       let arr
       arr = Object.values(result.data.data)
       setList(arr)
 
       let result2 = null
       if(champion) {
-        result2 = await axios(`http://ddragon.leagueoflegends.com/cdn/11.18.1/data/en_US/champion/${champion}.json`)
+        result2 = await axios(`https://ddragon.leagueoflegends.com/cdn/11.18.1/data/en_US/champion/${champion}.json`)
         let championInfo = Object.values(result2.data.data)
         setIndividualChampion(championInfo)
         

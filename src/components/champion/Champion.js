@@ -10,7 +10,7 @@ export const Champion = ({champInfo, isLoading}) => {
       ? <LoadingSpinner />
       : <div className = 'champion-card'>
           <div className = 'champion-image-wrapper'>
-            <img src = {`http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champInfo.id}_0.jpg`} alt = {`${champInfo.name} ${champInfo.title}`} />
+            <img src = {`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champInfo.id}_0.jpg`} alt = {`${champInfo.name} ${champInfo.title}`} />
           </div>
           <h1>{champInfo.name}</h1>
           <h2>{champInfo.title}</h2>
@@ -22,7 +22,7 @@ export const Champion = ({champInfo, isLoading}) => {
                 <p>{champInfo.passive.description}</p>
               </div>
               <div className="spell-image-wrapper">
-                <img src={`http://ddragon.leagueoflegends.com/cdn/11.18.1/img/passive/${champInfo.passive.image.full}`} alt="passive ability description" />
+                <img src={`https://ddragon.leagueoflegends.com/cdn/11.18.1/img/passive/${champInfo.passive.image.full}`} alt="passive ability description" />
               </div>
               <p>Passive</p>
             </div>
@@ -32,7 +32,7 @@ export const Champion = ({champInfo, isLoading}) => {
                 <p>{champInfo.spells[0].description}</p>
               </div>
               <div className="spell-image-wrapper">
-                <img src={`http://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[0].image.full}`} alt="Q spell description" />
+                <img src={`https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[0].image.full}`} alt="Q spell description" />
               </div>
               <p>Q</p>
             </div>
@@ -42,7 +42,7 @@ export const Champion = ({champInfo, isLoading}) => {
                 <p>{champInfo.spells[1].description}</p>
               </div>
               <div className="spell-image-wrapper">
-                <img src={`http://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[1].image.full}`} alt="W spell description" />
+                <img src={`https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[1].image.full}`} alt="W spell description" />
               </div>
               <p>W</p>
             </div>
@@ -52,7 +52,7 @@ export const Champion = ({champInfo, isLoading}) => {
                 <p>{champInfo.spells[2].description}</p>
               </div>
               <div className="spell-image-wrapper">
-                <img src={`http://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[2].image.full}`} alt="E spell description" />
+                <img src={`https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[2].image.full}`} alt="E spell description" />
               </div>
               <p>E</p>
             </div>
@@ -62,7 +62,7 @@ export const Champion = ({champInfo, isLoading}) => {
                 <p>{champInfo.spells[3].description}</p>
               </div>
               <div className="spell-image-wrapper">
-                <img src={`http://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[3].image.full}`} alt="R spell description" />
+                <img src={`https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champInfo.spells[3].image.full}`} alt="R spell description" />
               </div>
               <p>R</p>
             </div>
