@@ -42,7 +42,7 @@ h2 {
 }
 
 .tooltip-text {
-  background-color: var(--color-accent3);
+  background-color: var(--color-secondary);
   color: var(--color-primary);
   display: none;
   width: 250px;
